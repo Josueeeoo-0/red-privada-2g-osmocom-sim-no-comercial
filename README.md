@@ -17,7 +17,3 @@ Personalización de una USIM en GRSIMWrite, generación de credenciales Milenage
 ## Tutorial
 
 El recorrido completo está en [Inicio](docs/index.md), con capítulos sobre [generación de claves](docs/01-claves.md), [programación de la USIM](docs/02-usim.md), [configuración de red](docs/03-red.md), [OsmoHLR](docs/04-hlr.md), [OsmoMSC](docs/05-msc.md), [verificación](docs/06-prueba.md) y [referencias y alcance](docs/07-referencias.md).
-
-## Autor y licencia
-
-Autor: **Josue Giraldo Moya**. Código y documentación bajo la licencia MIT incluida. Marcas, normas y programas citados pertenecen a sus titulares. Uso educativo del espectro con aislamiento de RF o las autorizaciones correspondientes.
