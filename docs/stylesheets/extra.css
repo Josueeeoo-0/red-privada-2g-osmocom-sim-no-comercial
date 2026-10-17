@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap');
+
+/* ---------- Paleta clara: papel y tinta ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #f4ede0;
+  --md-default-fg-color: #2b2420;
+  --md-default-fg-color--light: #6b5d52;
+  --md-default-fg-color--lighter: #a8998a;
+  --md-default-fg-color--lightest: #e3d9c6;
+  --md-primary-fg-color: #f4ede0;
+  --md-primary-bg-color: #2b2420;
+  --md-accent-fg-color: #b4532a;
+  --md-typeset-color: #2b2420;
+  --md-typeset-a-color: #b4532a;
+  --md-code-bg-color: #ebe2d1;
+  --md-code-fg-color: #2b2420;
+}
+
+/* ---------- Paleta oscura: café y ámbar ---------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1c1814;
+  --md-default-fg-color: #ece3d3;
+  --md-default-fg-color--light: #b5a794;
+  --md-default-fg-color--lighter: #7d7163;
+  --md-default-fg-color--lightest: #332b24;
+  --md-primary-fg-color: #1c1814;
+  --md-primary-bg-color: #ece3d3;
+  --md-accent-fg-color: #e0a15a;
+  --md-typeset-color: #ece3d3;
+  --md-typeset-a-color: #e0a15a;
+  --md-code-bg-color: #261f1a;
+  --md-code-fg-color: #ece3d3;
+}
+
+/* ---------- Tipografía ---------- */
+.md-typeset {
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--md-default-fg-color);
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 { font-weight: 400; font-size: 2.3em; }
+.md-typeset h2 { font-weight: 600; font-size: 1.5em; }
+.md-typeset h3 { font-weight: 600; font-size: 1.15em; }
+
+/* ---------- Estructura sobria ---------- */
+.md-grid { max-width: 62rem; }
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-tabs { border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+
+.md-typeset a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Imágenes: marco fino, sin sombras ---------- */
+.md-typeset img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.md-typeset em { color: var(--md-default-fg-color--light); }
+
+/* ---------- Tablas ---------- */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+  border: none;
+  box-shadow: none;
+}
+
+.md-typeset table:not([class]) th {
+  background: transparent;
+  border-bottom: 2px solid var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ---------- Avisos planos ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  box-shadow: none;
+  border-radius: 2px;
+  border-width: 0 0 0 3px;
+  background: var(--md-code-bg-color);
+}
+
+/* ---------- Código ---------- */
+.md-typeset code,
+.md-typeset pre > code {
+  border-radius: 2px;
+}
+
+/* ---------- Título de la barra superior: sin negrita y con salto de línea ---------- */
+.md-header__inner {
+  height: auto;
+  min-height: 2.4rem;
+  padding: 0.4rem 0;
+}
+
+.md-header__title {
+  height: auto;
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.md-header__ellipsis {
+  height: auto;
+}
+
+.md-header__topic {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.md-header__topic:first-child {
+  position: relative;
+  font-weight: 400;
+}
+
+.md-header__topic + .md-header__topic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Tutorial USIM: imágenes contenidas y lectura continua. */
+.md-typeset figure { margin: 1.6rem 0 2rem; max-width: 100%; text-align: left; }
+.md-typeset figure img { display: block; height: auto; max-width: 100%; }
+.md-typeset figcaption { font-size: .72rem; line-height: 1.5; margin: .5rem 0 0; max-width: 500px; text-align: left; }
+.md-typeset figure a { display: inline-block; max-width: 100%; }
+.md-typeset pre { border: 1px solid var(--md-default-fg-color--lightest); }
+.md-typeset .highlight > .filename { background: var(--md-code-bg-color); border: 1px solid var(--md-default-fg-color--lightest); border-bottom: 0; font-size: .65rem; }
+.md-typeset h2 { padding-top: .6rem; }
+.md-typeset hr { border-bottom-color: var(--md-default-fg-color--lightest); }
+.project-kicker { color: var(--md-typeset-a-color); text-transform: uppercase; font: 500 .65rem/1.5 'IBM Plex Mono',monospace; letter-spacing: .12em; margin-bottom: .5rem; }
+.project-lead { font-size: 1.1rem; line-height: 1.6; max-width: 38rem; }
+.result-strip { border-top: 1px solid var(--md-default-fg-color--lightest); border-bottom: 1px solid var(--md-default-fg-color--lightest); padding: .7rem 0; margin: 1.6rem 0; font-size: .8rem; }
+@media (max-width: 600px) { .md-typeset { font-size: .88rem; } .md-typeset h1 { font-size: 1.9em; } .md-typeset table:not([class]) { font-size: .72rem; } }

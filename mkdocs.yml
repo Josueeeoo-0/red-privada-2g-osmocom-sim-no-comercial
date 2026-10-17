@@ -1,0 +1,56 @@
+site_name: "Red privada GSM 2G con Osmocom y USIM programable"
+site_description: "De la personalización de una USIM en GRSIMWrite al registro autenticado y una llamada de prueba con LibreSDR Mini B220."
+site_author: Josue Giraldo Moya
+site_url: https://josueeeoo-0.github.io/red-privada-2g-osmocom-sim-no-comercial/
+repo_url: https://github.com/Josueeeoo-0/red-privada-2g-osmocom-sim-no-comercial
+repo_name: red-privada-2g-osmocom-sim-no-comercial
+copyright: "Josue Giraldo Moya · Laboratorio de redes móviles"
+theme:
+  name: material
+  language: es
+  font:
+    text: Newsreader
+    code: IBM Plex Mono
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.footer
+    - content.code.copy
+plugins:
+  - search:
+      lang: es
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+nav:
+  - Inicio: index.md
+  - 1. Generación de claves: 01-claves.md
+  - 2. Programación de la USIM: 02-usim.md
+  - 3. Configuración de la red: 03-red.md
+  - 4. Registro en OsmoHLR: 04-hlr.md
+  - 5. Autenticación en OsmoMSC: 05-msc.md
+  - 6. Registro y llamada: 06-prueba.md
+  - 7. Referencias y alcance: 07-referencias.md
+  - 8. Publicar esta página: 08-publicacion.md
