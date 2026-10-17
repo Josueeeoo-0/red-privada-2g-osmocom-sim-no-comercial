@@ -10,7 +10,7 @@ telnet 127.0.0.1 4258
 
 <figure markdown="1">
 [![Conexión a la consola VTY de OsmoHLR](assets/images/paso-12.png){ width="500" loading="lazy" }](assets/images/paso-12.png)
-<figcaption>Acceso local al HLR en el puerto 4258. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Acceso local al HLR en el puerto 4258.</figcaption>
 </figure>
 
 Los comandos siguientes se introducen en la consola de **OsmoHLR**, no en la terminal Bash.
@@ -22,14 +22,11 @@ enable
 subscriber imsi 999990000000001 show
 ```
 
-```text title="Respuesta transcrita de la sesión"
+```text title="Respuesta de OsmoHLR"
 % No subscriber for imsi = '999990000000001'
 ```
 
 Esta respuesta indica que aún no existe el abonado.
-
-!!! note "Tramo sin captura"
-    La consulta inicial y los comandos de alta de los pasos 3 a 6 proceden del archivo de notas `comandos_que_no_tome_foto.txt` y de la sesión de laboratorio. Se transcriben como texto. No se ha creado una imagen de terminal ficticia; la evidencia fotográfica se retoma con **Screenshot_13**.
 
 ## Paso 3. Crear el abonado
 
@@ -78,7 +75,7 @@ subscriber imsi 999990000000001 show
 
 <figure markdown="1">
 [![Registro de OsmoHLR con IMSI número 501 y Milenage](assets/images/paso-13.png){ width="500" loading="lazy" }](assets/images/paso-13.png)
-<figcaption>Screenshot_13: se retoma la evidencia. K, OPc e IMEI se ocultan en la copia pública. Esta consulta se capturó después de una actualización de ubicación, por eso ya incluye IMEI y last LU. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Consulta del abonado: IMSI, número interno 501 y autenticación Milenage.</figcaption>
 </figure>
 
 | Dato observado | Significado |

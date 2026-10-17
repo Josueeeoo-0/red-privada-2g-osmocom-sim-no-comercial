@@ -4,7 +4,7 @@
 
 <figure markdown="1">
 [![GRSIMWrite antes de personalizar la tarjeta](assets/images/usim-antes.png){ width="500" loading="lazy" }](assets/images/usim-antes.png)
-<figcaption>antes_de_los_cambios: lectura inicial. Los códigos de administración se ocultan en la copia pública. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Lectura inicial de la tarjeta.</figcaption>
 </figure>
 
 La tarjeta ya tiene el **COS** instalado. Aquí se personalizan sus datos; no se instala un sistema operativo nuevo. GRSIMWrite identifica la tarjeta como `LTE [LY14]: LTE+GSM`. Esa etiqueta no convierte la red en LTE: una USIM puede utilizarse en GSM, y se mantienen coherentes ambos perfiles que muestra el programa.
@@ -43,7 +43,7 @@ El IMSI se divide en **999 / 99 / 0000000001**: MCC, MNC y número de abonado. L
 | **Language** | Conservar | No decide la autenticación GSM |
 | **Inc** | Desmarcado | Se escribe una sola tarjeta |
 
-Como ejemplo local de ICCID, la guía propuso **`8988000000000000016`**, de 19 dígitos y con control Luhn correcto. Es un identificador ficticio para laboratorio: **no es una asignación comercial** ni debe repetirse entre tarjetas. La captura final documenta el contenido introducido durante la práctica; no certifica la asignación ni el dígito de control de ese contenido. ICCID e IMSI son datos distintos, descritos en [TS 51.011, sección 10](https://www.etsi.org/deliver/etsi_ts/151000_151099/151011/04.15.00_60/ts_151011v041500p.pdf).
+Como ejemplo técnico de ICCID puede utilizarse **`8988000000000000016`**, de 19 dígitos y con control Luhn correcto. Es un identificador ficticio para laboratorio: **no es una asignación comercial** ni debe repetirse entre tarjetas. ICCID e IMSI son datos distintos, descritos en [TS 51.011, sección 10](https://www.etsi.org/deliver/etsi_ts/151000_151099/151011/04.15.00_60/ts_151011v041500p.pdf).
 
 No se debe adivinar el ADM ni copiar un supuesto valor universal: varios intentos incorrectos pueden bloquear el acceso administrativo. Que un campo muestre un ADM no demuestra que haya sido verificado. [Osmocom, verificación de ADM](https://downloads.osmocom.org/docs/pysim/master/html/shell.html#verify-adm).
 
@@ -90,8 +90,8 @@ En la ventana de **AD** se selecciona **00: normal operation** y **MNC:2 (MCC+MN
 
 El MNC tiene dos dígitos porque usamos **99**; junto con MCC **999** suma cinco. EF.AD permite especificar esa longitud. [Implementación de EF.AD en pySim](https://github.com/osmocom/pysim/blob/master/pySim/legacy/cards.py).
 
-!!! note "Diferencia entre la guía y la captura final"
-    La captura final muestra **ACC 0002** en ambos perfiles: corresponde a la clase normal 1. La guía había propuesto **0001**, clase normal 0. Ambas son clases ordinarias; se conserva la captura real y se explicita la diferencia. No se utiliza `FFFF` como máscara de ejemplo para el abonado. [TS 31.102, EF.ACC](https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/12.10.00_60/ts_131102v121000p.pdf).
+!!! note "Clases de acceso"
+    **ACC `0001`** selecciona la clase normal 0 y **ACC `0002`** selecciona la clase normal 1. Ambas son clases ordinarias. No se utiliza `FFFF` como máscara de ejemplo para el abonado. [TS 31.102, EF.ACC](https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/12.10.00_60/ts_131102v121000p.pdf).
 
 ## Paso 7. Copiar al panel GSM y revisar
 
@@ -139,7 +139,7 @@ El mensaje **Read Card Success** acredita una lectura, no una escritura anterior
 
 <figure markdown="1">
 [![GRSIMWrite después de los cambios con claves ocultas](assets/images/usim-despues.png){ width="500" loading="lazy" }](assets/images/usim-despues.png)
-<figcaption>despues_de_los_cambios: identidad y preferencias configuradas. ACC 0002 es el valor observado en la práctica; las claves permanecen privadas. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Identidad y preferencias configuradas; ACC 0002 corresponde a la clase normal 1.</figcaption>
 </figure>
 
 **Siguiente etapa:** [hacer coincidir la identidad de la red](03-red.md).

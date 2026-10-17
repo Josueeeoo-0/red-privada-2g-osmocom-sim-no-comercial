@@ -10,7 +10,7 @@ sudo osmo-nid-stop
 
 <figure markdown="1">
 [![Ejecución de osmo-nid-stop](assets/images/paso-01.png){ width="500" loading="lazy" }](assets/images/paso-01.png)
-<figcaption>La red se detiene antes de editar su configuración. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>La red se detiene antes de editar su configuración.</figcaption>
 </figure>
 
 ## Paso 2. Respaldar config.yml
@@ -21,12 +21,12 @@ sudo cp -a /etc/osmo-nid/config.yml /etc/osmo-nid/config.yml.antes-usim.bak
 
 <figure markdown="1">
 [![Comando de respaldo de config.yml](assets/images/paso-02.png){ width="500" loading="lazy" }](assets/images/paso-02.png)
-<figcaption>Copia de la configuración anterior a la nueva USIM. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Copia de la configuración anterior a la nueva USIM.</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Explorador mostrando config.yml y su respaldo](assets/images/paso-03.png){ width="500" loading="lazy" }](assets/images/paso-03.png)
-<figcaption>El archivo de respaldo aparece en /etc/osmo-nid. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>El archivo de respaldo aparece en /etc/osmo-nid.</figcaption>
 </figure>
 
 ## Paso 3. Abrir la configuración
@@ -37,26 +37,26 @@ sudo nano /etc/osmo-nid/config.yml
 
 <figure markdown="1">
 [![Apertura de config.yml con nano](assets/images/paso-04.png){ width="500" loading="lazy" }](assets/images/paso-04.png)
-<figcaption>Edición del archivo fuente de osmo-nid. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Edición del archivo fuente de osmo-nid.</figcaption>
 </figure>
 
 ### Configuración antes del cambio
 
-El estado anterior anunciaba MCC `001`, MNC `01` y el nombre `Test`. Las siguientes tres capturas recorren el archivo original.
+El estado anterior anunciaba MCC `001`, MNC `01` y el nombre `Test`.
 
 <figure markdown="1">
 [![Bloques network y radio antes del cambio](assets/images/paso-05.png){ width="500" loading="lazy" }](assets/images/paso-05.png)
-<figcaption>Bloques network y radio antes del cambio · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Bloques network y radio antes del cambio</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Bloques egprs subscribers e interaction](assets/images/paso-06.png){ width="500" loading="lazy" }](assets/images/paso-06.png)
-<figcaption>Bloques egprs subscribers e interaction · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Bloques egprs subscribers e interaction</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Bloques call y api antes del cambio](assets/images/paso-07.png){ width="500" loading="lazy" }](assets/images/paso-07.png)
-<figcaption>Bloques call y api antes del cambio · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Bloques call y api antes del cambio</figcaption>
 </figure>
 
 ## Paso 4. Cambiar el bloque network
@@ -87,17 +87,17 @@ network:
 
 <figure markdown="1">
 [![Network con MCC 999 MNC 99 y nombre JOSUE_CORP](assets/images/paso-08.png){ width="500" loading="lazy" }](assets/images/paso-08.png)
-<figcaption>Network con MCC 999 MNC 99 y nombre JOSUE_CORP · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Network con MCC 999 MNC 99 y nombre JOSUE_CORP</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Configuración de datos y mensaje de bienvenida conservada](assets/images/paso-09.png){ width="500" loading="lazy" }](assets/images/paso-09.png)
-<figcaption>Configuración de datos y mensaje de bienvenida conservada · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Configuración de datos y mensaje de bienvenida conservada</figcaption>
 </figure>
 
 <figure markdown="1">
 [![API local y opciones de interacción conservadas](assets/images/paso-10.png){ width="500" loading="lazy" }](assets/images/paso-10.png)
-<figcaption>API local y opciones de interacción conservadas · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>API local y opciones de interacción conservadas</figcaption>
 </figure>
 
 Guardar con **Ctrl + O**, **Enter** y salir con **Ctrl + X**.
@@ -124,7 +124,7 @@ sudo osmo-nid-start
 
 <figure markdown="1">
 [![Arranque de osmo-nid con todos los servicios UP](assets/images/paso-11.png){ width="500" loading="lazy" }](assets/images/paso-11.png)
-<figcaption>La captura muestra osmo-trx y osmo-bts-trx activos, junto con el núcleo. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>La captura muestra osmo-trx y osmo-bts-trx activos, junto con el núcleo.</figcaption>
 </figure>
 
 Si `osmo-trx` queda en `DOWN`, consultar el registro antes de atribuirlo a la USIM:
@@ -133,6 +133,6 @@ Si `osmo-trx` queda en `DOWN`, consultar el registro antes de atribuirlo a la US
 sudo tail -n 60 /var/log/osmo-nid/osmo-trx.log
 ```
 
-Este comando de diagnóstico no tiene una captura asociada en el material entregado. Un estado `UP` acredita el arranque del proceso, no el registro de un teléfono.
+Un estado `UP` acredita el arranque del proceso, no el registro de un teléfono.
 
 **Siguiente etapa:** [registrar el abonado en OsmoHLR](04-hlr.md). Mantener el teléfono en modo avión durante la preparación.

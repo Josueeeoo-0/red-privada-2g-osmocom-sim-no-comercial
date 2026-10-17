@@ -1,4 +1,4 @@
-site_name: "Red privada GSM 2G con Osmocom y USIM programable"
+site_name: "Red privada 2G con una USIM"
 site_description: "De la personalización de una USIM en GRSIMWrite al registro autenticado y una llamada de prueba con LibreSDR Mini B220."
 site_author: Josue Giraldo Moya
 site_url: https://josueeeoo-0.github.io/red-privada-2g-osmocom-sim-no-comercial/
@@ -53,4 +53,3 @@ nav:
   - 5. Autenticación en OsmoMSC: 05-msc.md
   - 6. Registro y llamada: 06-prueba.md
   - 7. Referencias y alcance: 07-referencias.md
-  - 8. Publicar esta página: 08-publicacion.md

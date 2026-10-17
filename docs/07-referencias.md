@@ -2,7 +2,7 @@
 
 ## Fuentes del proyecto
 
-Este tutorial reúne las capturas de la sesión, las notas del tramo sin fotografía y la documentación del primer laboratorio. Las fuentes técnicas se enlazan junto a cada explicación para facilitar su comprobación.
+Las fuentes técnicas se enlazan junto a cada explicación para facilitar su comprobación.
 
 | Fuente | Qué respalda |
 |---|---|
@@ -21,23 +21,6 @@ Este tutorial reúne las capturas de la sesión, las notas del tramo sin fotogra
 | [OsmoMSC, referencia VTY](https://downloads.osmocom.org/docs/osmo-msc/master/osmomsc-vty-reference.pdf) | Consola y comandos de configuración y consulta |
 
 Las normas ETSI/3GPP y los manuales de Osmocom son las referencias técnicas. La guía de iothon documenta la interfaz del programa; no garantiza el comportamiento de cualquier COS genérico. Los enlaces `master` reflejan documentación que puede cambiar.
-
-## Procedencia de las imágenes
-
-Se incluyen **30 capturas y fotografías** aportadas por el autor:
-
-| Grupo original | Uso en el sitio |
-|---|---|
-| `images_codigo_python` (5) | Preparación del entorno y generación de claves |
-| `images_configuracion_usim` (2) | Estado anterior y posterior de GRSIMWrite |
-| `images` (21) | Red, HLR, MSC, monitor y llamada |
-| `images_equipo` (2) | Introducción y resultado en el teléfono |
-
-La consulta del IMSI inexistente y los comandos iniciales de alta no tienen fotografía. Se identifican como transcripción, antes de retomar Screenshot_13. Esa captura del HLR ya incluye una actualización de ubicación posterior: su fecha no se presenta como el instante de creación del abonado.
-
-## Datos ocultos en las copias públicas
-
-Se ocultan K, OP, OPc, códigos de administración y el IMEI donde aparecen. Los originales se conservan fuera del paquete publicable. No se incluye `credenciales.txt`; los comandos utilizan `TU_K` y `TU_OPC` como marcadores.
 
 ## Alcance de la validación
 

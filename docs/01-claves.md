@@ -25,7 +25,7 @@ pip install pycryptodome
 
 <figure markdown="1">
 [![Creación de sim-lab e instalación de PyCryptodome](assets/images/python-01.png){ width="500" loading="lazy" }](assets/images/python-01.png)
-<figcaption>Preparación del entorno. La captura contiene además un intento inicial de mkdir; el bloque anterior presenta la secuencia limpia. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Preparación del entorno e instalación de PyCryptodome.</figcaption>
 </figure>
 
 El entorno virtual mantiene las dependencias del generador separadas de las herramientas del sistema. `chmod 700` limita el acceso a la carpeta en Linux.
@@ -38,7 +38,7 @@ nano generar_claves.py
 
 <figure markdown="1">
 [![Comando nano generar_claves.py](assets/images/python-02.png){ width="500" loading="lazy" }](assets/images/python-02.png)
-<figcaption>Apertura del archivo que contendrá el generador. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Apertura del archivo del generador.</figcaption>
 </figure>
 
 Copia este código y guarda con **Ctrl + O**, **Enter** y **Ctrl + X**:
@@ -81,7 +81,7 @@ python generar_claves.py
 
 <figure markdown="1">
 [![Ejecución de generar_claves.py y mensaje de archivo creado](assets/images/python-03.png){ width="500" loading="lazy" }](assets/images/python-03.png)
-<figcaption>El programa confirma que guardó credenciales.txt sin imprimir sus valores. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>El programa confirma que guardó credenciales.txt sin imprimir sus valores.</figcaption>
 </figure>
 
 !!! warning "No sobrescribir las claves ya utilizadas"
@@ -95,12 +95,12 @@ nano credenciales.txt
 
 <figure markdown="1">
 [![Apertura local de credenciales.txt](assets/images/python-04.png){ width="500" loading="lazy" }](assets/images/python-04.png)
-<figcaption>Consulta de las claves para copiarlas al software de personalización. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Consulta local de las claves para la personalización.</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Archivo de credenciales con K OP y OPC ocultos](assets/images/python-05.png){ width="500" loading="lazy" }](assets/images/python-05.png)
-<figcaption>Copia pública: valores ocultos. En el equipo local se copian los valores completos. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Archivo de credenciales con los valores ocultos.</figcaption>
 </figure>
 
 El archivo tiene tres líneas: `K=...`, `OP=...` y `OPC=...`. Copia únicamente el valor situado después de `=`. No subas ese archivo a GitHub ni incluyas las claves en un commit. El permiso `600` limita su lectura y escritura al propietario en Linux; en Windows se necesita gestionar las ACL del archivo.

@@ -15,12 +15,12 @@ show running-config
 
 <figure markdown="1">
 [![Conexión a OsmoMSC y ejecución de show running-config](assets/images/paso-14.png){ width="500" loading="lazy" }](assets/images/paso-14.png)
-<figcaption>Acceso al MSC y consulta de la configuración efectiva. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Acceso al MSC y consulta de la configuración efectiva.</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Bloque network del MSC con authentication optional](assets/images/paso-15.png){ width="500" loading="lazy" }](assets/images/paso-15.png)
-<figcaption>Estado inicial: MCC y MNC correctos, pero autenticación opcional. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Estado inicial: MCC y MNC correctos, pero autenticación opcional.</figcaption>
 </figure>
 
 Con `authentication optional`, el MSC puede aceptar abonados que no tengan claves. Si un abonado sí tiene credenciales en el HLR, se comprueban. Con `required`, también se rechazan los abonados sin claves. [Manual de OsmoMSC, autenticación en 2G](https://downloads.osmocom.org/docs/osmo-msc/master/osmomsc-usermanual.pdf).
@@ -37,7 +37,7 @@ write file
 
 <figure markdown="1">
 [![Cambio a authentication required y guardado del archivo](assets/images/paso-16.png){ width="500" loading="lazy" }](assets/images/paso-16.png)
-<figcaption>El MSC confirma que guarda /etc/osmocom/osmo-msc.cfg. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>El MSC confirma que guarda /etc/osmocom/osmo-msc.cfg.</figcaption>
 </figure>
 
 | Comando | Función |
@@ -56,12 +56,12 @@ show running-config
 
 <figure markdown="1">
 [![Nueva consulta show running-config](assets/images/paso-17.png){ width="500" loading="lazy" }](assets/images/paso-17.png)
-<figcaption>Consulta después de cambiar la política. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Consulta después de cambiar la política.</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Línea authentication required visible en network](assets/images/paso-18.png){ width="500" loading="lazy" }](assets/images/paso-18.png)
-<figcaption>Estado final: autenticación requerida, con A5/0 conservado para esta prueba. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Estado final: autenticación requerida, con A5/0 conservado para esta prueba.</figcaption>
 </figure>
 
 Debe aparecer:

@@ -1,6 +1,6 @@
 <p class="project-kicker">Redes móviles · Laboratorio GSM · Osmocom</p>
 
-# Red privada 2G con una USIM programada por mí
+# Red privada 2G con una USIM
 
 <p class="project-lead">De una tarjeta en blanco a un abonado registrado: generación de claves, personalización en GRSIMWrite y una llamada entrante en una red GSM con LibreSDR Mini B220.</p>
 
@@ -12,12 +12,12 @@ Este proyecto continúa el [laboratorio anterior con una SIM comercial](https://
 
 <figure markdown="1">
 [![Lector de tarjetas y USIM programable utilizados en el laboratorio](assets/images/equipo.png){ width="500" loading="lazy" }](assets/images/equipo.png)
-<figcaption>Material de personalización: lector USB y tarjeta programable, junto al ordenador. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Material de personalización: lector USB y tarjeta programable, junto al ordenador.</figcaption>
 </figure>
 
 <figure markdown="1">
 [![Teléfono con JOSUE_CORP y llamada entrante del número 100](assets/images/llamada-telefono.png){ width="300" loading="lazy" }](assets/images/llamada-telefono.png)
-<figcaption>Resultado final: llamada entrante del número 100. La notificación inferior muestra el mensaje de bienvenida de DragonOS. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Resultado: llamada entrante del número 100. La notificación inferior muestra el mensaje de bienvenida de DragonOS.</figcaption>
 </figure>
 
 ## Qué se hizo
@@ -58,5 +58,3 @@ La tarjeta es leída por **el teléfono**. La B220 transporta las señales de ra
 
 !!! note "Qué demuestra este laboratorio"
     Se documentan el registro del abonado y una llamada entrante con autenticación requerida en el MSC. Se conserva `encryption a5 0`: **el enlace de radio no está cifrado**. No se presenta como una validación de LTE, de datos móviles ni de audio bidireccional.
-
-Las capturas públicas conservan los pasos reales. Las claves y el IMEI se han ocultado en las copias publicables. El tramo de alta sin fotografías se identifica expresamente como transcripción.

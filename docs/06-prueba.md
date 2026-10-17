@@ -10,7 +10,7 @@ osmo-nid-mon
 
 <figure markdown="1">
 [![Comando osmo-nid-mon](assets/images/paso-21.png){ width="500" loading="lazy" }](assets/images/paso-21.png)
-<figcaption>Esta captura se coloca antes del resultado del monitor para seguir el orden del procedimiento. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Inicio del monitor de abonados.</figcaption>
 </figure>
 
 ## Paso 2. Seleccionar la red desde el teléfono
@@ -27,7 +27,7 @@ La configuración del menú del Redmi se explica en el [proyecto anterior](https
 
 <figure markdown="1">
 [![Monitor con el abonado 501 y su IMSI registrado](assets/images/paso-19.png){ width="500" loading="lazy" }](assets/images/paso-19.png)
-<figcaption>Resultado: el monitor lista IMSI 999990000000001 y MSISDN 501. El IMEI se oculta en la copia pública. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Resultado: el monitor lista IMSI 999990000000001 y MSISDN 501.</figcaption>
 </figure>
 
 | Evidencia | Resultado |
@@ -49,7 +49,7 @@ osmo-nid-call 100 501
 
 <figure markdown="1">
 [![Comando osmo-nid-call 100 501](assets/images/paso-20.png){ width="500" loading="lazy" }](assets/images/paso-20.png)
-<figcaption>Llamada de prueba: origen 100 y destino 501. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>Llamada de prueba: origen 100 y destino 501.</figcaption>
 </figure>
 
 | Argumento | Qué representa |
@@ -63,7 +63,7 @@ Se utiliza el mismo mecanismo de llamada del [laboratorio inicial](https://josue
 
 <figure markdown="1">
 [![Llamada entrante del número 100 en el teléfono](assets/images/llamada-telefono.png){ width="300" loading="lazy" }](assets/images/llamada-telefono.png)
-<figcaption>El teléfono muestra la llamada entrante y el mensaje de bienvenida de DragonOS. · Pulsa la imagen para ampliarla.</figcaption>
+<figcaption>El teléfono muestra la llamada entrante y el mensaje de bienvenida de DragonOS.</figcaption>
 </figure>
 
 La fotografía acredita la **llamada entrante** y la notificación de bienvenida recibida. No demuestra por sí sola que se contestara, que hubiera audio en ambos sentidos ni el envío de SMS desde el teléfono.
